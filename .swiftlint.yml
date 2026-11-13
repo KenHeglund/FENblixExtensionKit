@@ -1,0 +1,60 @@
+# SwiftLint configuration for FENblixExtensionKit.
+# Run with: swiftlint
+
+included:
+  - Package.swift
+  - Sources
+  - Tests
+  - Examples
+
+excluded:
+  - build
+  - DerivedData
+  - .build
+
+# Generated and scaffold files carry Xcode's boilerplate comments; keep the
+# signal focused on code we actually write.
+line_length:
+  warning: 120
+  error: 200
+  ignores_comments: true
+  ignores_urls: true
+
+identifier_name:
+  # Chess work uses short, meaningful names: file/rank indices, board squares.
+  min_length: 1
+  excluded: [i, j, x, y, r, f]
+
+type_name:
+  min_length: 3
+
+# A wide exhaustive switch (piece -> glyph, error -> message) is a lookup table,
+# not branching complexity. Real nesting and loops still count.
+cyclomatic_complexity:
+  ignores_case_statements: true
+
+
+# force_unwrapping is opt-in. FEN parsing deals with untrusted input, so a
+# force-unwrap there is a crash waiting on malformed user input.
+#
+# redundant_type_annotation is opt-in too: an initializer that already states the
+# type makes the annotation noise, so `var isFlipped = false` rather than
+# `var isFlipped: Bool = false`.
+opt_in_rules:
+  - force_unwrapping
+  - missing_docs
+  - redundant_type_annotation
+
+force_unwrapping:
+  severity: warning
+
+# Every declaration is documented, whatever its access level: a property or
+# function says what it is for, and so does a type or an enum case. Overrides and
+# protocol requirements included. The test targets switch this off in their own
+# .swiftlint.yml, because a @Test function's display name already says what it
+# checks; their helpers are documented by hand.
+missing_docs:
+  warning: [open, public, internal, fileprivate, private]
+  excludes_extensions: true
+  excludes_inherited_types: false
+  excludes_trivial_init: false

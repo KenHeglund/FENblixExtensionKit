@@ -1,0 +1,85 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Depth %lld" : {
+      "comment" : "Labels a line of analysis. The argument is how deep the simulated search reached."
+    },
+    "Example evaluator: material count, simulated depth" : {
+      "comment" : "Caption over the analysis: it counts material and only pretends to search deeper."
+    },
+    "Rank %lld contains “%@”, which is not a piece or a count of empty squares." : {
+      "comment" : "Why the example evaluator can't score a position. Arguments: a rank number, a character.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Rank %1$lld contains “%2$@”, which is not a piece or a count of empty squares."
+          }
+        }
+      }
+    },
+    "Rank %lld covers %lld squares instead of 8." : {
+      "comment" : "Why the example evaluator can't score a position. Arguments: a rank number, a count.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rank %1$lld covers %#@squares@ instead of 8."
+          },
+          "substitutions" : {
+            "squares" : {
+              "argNum" : 2,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg square"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg squares"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "The piece placement has %lld ranks instead of 8." : {
+      "comment" : "Why the example evaluator can't score a position. The argument is a count.",
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "The piece placement has %lld rank instead of 8."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "The piece placement has %lld ranks instead of 8."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "The position has no piece placement." : {
+      "comment" : "Why the example evaluator can't score a position."
+    },
+    "Waiting for a position" : {
+      "comment" : "Shown until FENblix sends the first position to analyze."
+    }
+  },
+  "version" : "1.0"
+}

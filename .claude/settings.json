@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(scripts/build.sh:*)",
+      "Bash(./scripts/build.sh:*)",
+      "Bash(scripts/test.sh:*)",
+      "Bash(./scripts/test.sh:*)",
+      "Bash(scripts/clean.sh:*)",
+      "Bash(./scripts/clean.sh:*)",
+      "Bash(xcodebuild:*)",
+      "Bash(xcrun:*)",
+      "Bash(swift:*)",
+      "Bash(swiftlint:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(git branch:*)"
+    ]
+  }
+}

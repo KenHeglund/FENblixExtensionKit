@@ -1,0 +1,27 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "1. Open FENblix." : {
+      "comment" : "First of three steps for enabling the extension."
+    },
+    "2. Choose FENblix > Settings." : {
+      "comment" : "Second step. FENblix > Settings is a menu item; match the name FENblix gives it."
+    },
+    "3. Enable Example Theme." : {
+      "comment" : "Third step, in FENblix's Settings. “Example Theme” is the extension's name."
+    },
+    "Example Theme" : {
+      "comment" : "Window heading: the name of the extension this app installs."
+    },
+    "FENblix Theme Example" : {
+      "comment" : "Window title: the name of the app carrying Example Theme."
+    },
+    "FENblix extensions that are provided by other apps are disabled until they are enabled in FENblix:" : {
+      "comment" : "Introduces three numbered steps."
+    },
+    "This app installs Example Theme, a theme extension for FENblix. It draws the board, the piece trays and the pieces. It shows how an extension is built and shipped." : {
+      "comment" : "Describes the app and its extension. “Example Theme” and “FENblix” are names."
+    }
+  },
+  "version" : "1.0"
+}

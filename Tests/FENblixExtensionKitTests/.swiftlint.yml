@@ -1,0 +1,4 @@
+# @Test display names describe each test; see missing_docs in the root .swiftlint.yml.
+# Helpers here are still documented by hand.
+disabled_rules:
+  - missing_docs
